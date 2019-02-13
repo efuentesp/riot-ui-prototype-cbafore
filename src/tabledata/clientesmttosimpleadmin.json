@@ -1,0 +1,96 @@
+{
+  "ids": [
+    {
+      "id": "mantenimientoClientesSimpleAdmin",
+      "headers": [
+        {
+          "label": "TextoNormal",
+          "required": "true"
+        },
+        {
+          "label": "Teléfono",
+          "type": "phone",
+          "required": "true"
+        },
+        {
+          "label": "Tipo de crédito",
+          "type": "select",
+          "data": ["Bancario", "Bancario 1", "Bancario 2", "Bancario 3"],
+          "required": "false"
+        },
+        {
+          "label": "Crédito",
+          "type": "currency",
+          "precision": 3,
+          "required": "true"
+        },
+        {
+          "label": "Fecha",
+          "type": "date",
+          "required": "false"
+        },
+        {
+          "label": "Autocomplete",
+          "type": "auto",
+          "data": ["algo ", "algo 1", "algo  2", "algo 3"]
+        },
+        {
+          "label": "Output Text",
+          "type": "output",
+          "required": "true"
+        }
+      ],
+      "rows": [],
+      "actions": [
+        {
+          "group": "Generales",
+          "actions": [
+            {
+              "label": "Pedidos",
+              "link": "/pedido-admin/"
+            },
+            {
+              "label": "Facturas",
+              "link": "/facturas-admin/"
+            }
+          ]
+        },
+        {
+          "group": "Cargos",
+          "actions": [
+            {
+              "label": "Generar cargos",
+              "link": "/generar-cargos/"
+            },
+            {
+              "label": "Agregar cargos manuales",
+              "link": "/agregar-cargos/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "WWW",
+      "headers": [
+        {
+          "label": "Número de cliente"
+        }
+      ],
+      "rows": [
+        {
+          "id": "E001",
+          "data": ["E001"]
+        },
+        {
+          "id": "E009",
+          "data": ["E009"]
+        },
+        {
+          "id": "E010",
+          "data": ["E010"]
+        }
+      ]
+    }
+  ]
+}

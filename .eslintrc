@@ -1,0 +1,15 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["standard", "eslint:recommended"],
+  "plugins": ["riot"],
+  "globals": {
+    "riot": true,
+    "opts": true
+  },
+  "env": {
+    "browser": 1
+  },
+  "rules": {
+    "no-mixed-spaces-and-tabs": [2, "smart-tabs"]
+  }
+}
